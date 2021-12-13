@@ -1,0 +1,20 @@
+{
+	"name": "pixelcity",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"author": "Omar <https://twitter.com/Naomsa666>",
+	"private": "true",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"dev": "concurrently \"yarn workspace @pixelcity/frontend run dev\" \"yarn workspace @pixelcity/contracts run chain\"",
+		"deploy": "yarn workspace @pixelcity/contracts run deploy",
+		"build": "yarn workspace @pixelcity/contracts run build",
+		"test": "yarn workspace @pixelcity/contracts run test"
+	},
+	"devDependencies": {
+		"concurrently": "^6.4.0"
+	}
+}

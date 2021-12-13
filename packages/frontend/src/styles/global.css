@@ -1,0 +1,39 @@
+/* Base Styling */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Dogica";
+	src: url("/fonts/Dogica_Pixel.woff2") format("woff2"),
+		url("/fonts/Dogica_Pixel.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--primary: #a0e8af;
+	--secondary: #e56399;
+	--neutral: #3ab795;
+	--background: #080f0f;
+}
+
+/* Reset */
+body {
+	font-family: "Dogica";
+}
+
+/* Components */
+button {
+	@apply p-1 transition-colors border-2 rounded-lg border-primary text-primary bg-background hover:text-secondary;
+}
+
+a {
+	@apply border-current hover:border-b-2;
+}
+
+option,
+select {
+	@apply h-8 px-2 border-2 rounded-lg bg-background border-primary text-secondary;
+}
