@@ -10,7 +10,6 @@
 		"test:gas": "set REPORT_GAS=true && hardhat test",
 		"deploy": "hardhat run scripts/deploy.ts",
 		"build": "hardhat clean && hardhat compile",
-		"prepare": "husky install",
 		"chain": "hardhat node"
 	},
 	"devDependencies": {
@@ -30,7 +29,6 @@
 		"ethers": "^5.0.0",
 		"hardhat": "^2.6.8",
 		"hardhat-gas-reporter": "^1.0.4",
-		"husky": "^7.0.4",
 		"prettier": "^2.3.2",
 		"prettier-plugin-solidity": "^1.0.0-beta.13",
 		"solhint": "^3.3.6",
