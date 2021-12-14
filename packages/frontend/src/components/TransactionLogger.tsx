@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getExplorerTransactionLink, TransactionStatus } from "@usedapp/core";
 
 interface TransactionLoggerProps {
@@ -25,16 +26,16 @@ export default function TransactionLogger({
 					{tx.transaction && (
 						<span>
 							Check it out on the{" "}
-							<a
+							<Link
 								href={getExplorerTransactionLink(
 									tx.transaction.hash,
 									tx.chainId
 								)}
-								target="_blank"
-								className="text-purple-400"
 							>
-								explorer
-							</a>
+								<a target="_blank" className="text-purple-400">
+									explorer
+								</a>
+							</Link>
 						</span>
 					)}
 				</div>
