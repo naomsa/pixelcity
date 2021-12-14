@@ -20,13 +20,24 @@ export default function TransactionLogger({
 	switch (tx.status) {
 		case "Mining":
 			return (
-				<span className="block text-green-500">
-					Transaction pending...
-					{tx.receipt &&
-						"Check it out on " &&
-						getExplorerTransactionLink(tx.receipt.transactionHash, tx.chainId)}
-					.
-				</span>
+				<div className="text-center">
+					<span className="block">Transaction pending...</span>
+					{tx.transaction && (
+						<span>
+							Check it out on the{" "}
+							<a
+								href={getExplorerTransactionLink(
+									tx.transaction.hash,
+									tx.chainId
+								)}
+								target="_blank"
+								className="text-purple-400"
+							>
+								explorer
+							</a>
+						</span>
+					)}
+				</div>
 			);
 		case "Success":
 			return (
