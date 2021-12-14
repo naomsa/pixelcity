@@ -6,11 +6,11 @@ export default function Balance() {
 	return (
 		<section
 			id="balance"
-			className="flex flex-col items-center gap-12 py-12 bg-primary"
+			className="flex flex-col items-center gap-12 px-6 py-12 text-center bg-primary"
 		>
-			<span className="text-4xl font-bold ">Your Pixels</span>
+			<span className="text-4xl font-bold">Your Pixels</span>
 			{tokens.length ? (
-				<div className="grid grid-cols-1 gap-8 lg:grid-cols-6">
+				<div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-6">
 					{tokens.map((token, index) => (
 						<div
 							key={index}

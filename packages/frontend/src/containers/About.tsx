@@ -9,7 +9,7 @@ export default function About() {
 				/>
 				<div className="col-span-2 text-center xl:w-1/2 xl:col-auto">
 					<span className="hidden text-4xl font-bold xl:block">About</span>
-					<p className="mt-4 text-lg text-justify">
+					<p className="mt-4 text-lg">
 						All Pixel City tokens have randomly generated traits stored on the
 						blockchain. Their uniqueness is used to create a new SVG image and
 						it's custom attributes which can be found on the contract.
