@@ -1,24 +1,24 @@
 {
-	"name": "pixelcity",
-	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT",
-	"author": "Omar <https://twitter.com/Naomsa666>",
-	"private": "true",
-	"workspaces": [
-		"packages/*"
-	],
-	"scripts": {
-		"prepare": "husky install",
-		"dev:ui": "yarn workspace @pixelcity/frontend run dev",
-		"build:ui": "yarn workspace @pixelcity/frontend run build",
-		"build:core": "yarn workspace @pixelcity/contracts run build",
-		"deploy:core": "yarn workspace @pixelcity/contracts run deploy",
-		"test:core": "yarn workspace @pixelcity/contracts run test",
-		"chain:core": "yarn workspace @pixelcity/contracts run chain"
-	},
-	"devDependencies": {
-		"concurrently": "^6.4.0",
-		"husky": "^7.0.4"
-	}
+  "name": "pixelcity",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.1.1",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Omar <https://twitter.com/Naomsa666>",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "dev:ui": "yarn workspace @pixelcity/frontend run dev",
+    "build:ui": "yarn workspace @pixelcity/frontend run build",
+    "build:core": "yarn workspace @pixelcity/contracts run build",
+    "deploy:core": "yarn workspace @pixelcity/contracts run deploy",
+    "test:core": "yarn workspace @pixelcity/contracts run test",
+    "chain:core": "yarn workspace @pixelcity/contracts run chain"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "husky": "^7.0.4"
+  }
 }
