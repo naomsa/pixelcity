@@ -10,12 +10,12 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "dev:ui": "yarn workspace @pixelcity/frontend run dev",
-    "build:ui": "yarn workspace @pixelcity/frontend run build",
-    "build:core": "yarn workspace @pixelcity/contracts run build",
-    "deploy:core": "yarn workspace @pixelcity/contracts run deploy",
-    "test:core": "yarn workspace @pixelcity/contracts run test",
-    "chain:core": "yarn workspace @pixelcity/contracts run chain"
+    "dev:ui": "yarn workspace @pixelcity/ui run dev",
+    "build:ui": "yarn workspace @pixelcity/ui run build",
+    "build:core": "yarn workspace @pixelcity/core run build",
+    "deploy:core": "yarn workspace @pixelcity/core run deploy",
+    "test:core": "yarn workspace @pixelcity/core run test",
+    "chain:core": "yarn workspace @pixelcity/core run chain"
   },
   "devDependencies": {
     "concurrently": "^6.4.0",
