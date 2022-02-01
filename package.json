@@ -9,7 +9,6 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "husky install",
     "dev:ui": "yarn workspace @pixelcity/ui run dev",
     "build:ui": "yarn workspace @pixelcity/ui run build",
     "build:core": "yarn workspace @pixelcity/core run build",
