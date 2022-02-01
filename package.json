@@ -18,7 +18,6 @@
     "chain:core": "yarn workspace @pixelcity/core run chain"
   },
   "devDependencies": {
-    "concurrently": "^6.4.0",
-    "husky": "^7.0.4"
+    "concurrently": "^6.4.0"
   }
 }
